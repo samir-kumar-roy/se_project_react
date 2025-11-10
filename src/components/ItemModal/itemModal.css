@@ -1,0 +1,32 @@
+.modal__content-item_modal {
+  padding: 0;
+}
+.modal__body {
+  max-width: 498px;
+  max-height: 498px;
+  height: 498px;
+  position: relative;
+}
+.modal__close-item {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.modal__close:hover {
+  cursor: pointer;
+}
+
+.modal__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal__item-name {
+  margin: 20 0 12px;
+}
+.modal__weather-type {
+  margin: 0;
+}
+.modal__footer {
+  padding: 0 0 32px 32px;
+}

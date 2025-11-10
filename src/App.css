@@ -1,0 +1,13 @@
+.page {
+  background-color: #f3f3f3;
+  font-family: Cabinet Grotesk;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+.page__content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

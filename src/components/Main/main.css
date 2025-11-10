@@ -1,0 +1,19 @@
+.cards {
+  width: 100%;
+}
+.cards__list {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .cards__list {
+    justify-content: center;
+  }
+  .cards__text {
+    text-align: center;
+  }
+}
