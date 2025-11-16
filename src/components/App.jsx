@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../App.css";
 import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 import Main from "./Main/Main";
 import ModalWithForm from "./ModalWithForm/ModalWithForm";
 import ItemModal from "./ItemModal/ItemModal";
@@ -37,6 +38,7 @@ function App() {
       <div className="page__content">
         <Header handleClickModal={handleClickModal} weatherData={weatherData} />
         <Main weatherData={weatherData} handleCardClick={handleCardClick} />
+        <Footer />
       </div>
       <ModalWithForm
         title="New Garment"
