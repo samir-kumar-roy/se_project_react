@@ -3,11 +3,12 @@ import "./modalWithForm.css";
 export default function ModalWithForm({
   title,
   buttonText,
-  activeModal,
   closeActiveModal,
+  children,
+  isOpened,
 }) {
   return (
-    <div className={`modal ${activeModal === "add-garment" && "modal_opened"}`}>
+    <div className={`modal ${isOpened && "modal_opened"}`}>
       <div className="modal__content">
         <div className="modal__header">
           <h2 className="modal__title">{title}</h2>
@@ -20,7 +21,8 @@ export default function ModalWithForm({
           </button>
         </div>
         <form className="modal__form">
-          <label htmlFor="input-name" className="modal__label">
+          {children}
+          {/* <label htmlFor="input-name" className="modal__label">
             <span>Name </span>
             <input
               type="text"
@@ -79,7 +81,7 @@ export default function ModalWithForm({
               />{" "}
               Warm
             </label>
-          </fieldset>
+          </fieldset> */}
           <button type="submit" className="modal__submit">
             {buttonText}
           </button>

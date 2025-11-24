@@ -5,7 +5,7 @@ export default function ItemCard({ item, handleCardClick }) {
       <h5 className="card__title">{item.name}</h5>
       <img
         src={item.link}
-        alt="item image"
+        alt={item.name}
         className="card__image"
         onClick={() => {
           handleCardClick(item);
