@@ -76,7 +76,7 @@ se_project_react/
 
 ![Homepage Screenshot](public/screenshots/homepage.png)
 ![Item preview Modal SS](public/screenshots/item_preview.png)
-![Add Garment Modal SS](public/screenshots/addd_garment.png)
+![Add Garment Modal SS](public/screenshots/add_garment.png)
 
 ## Roadmap
 
