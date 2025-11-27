@@ -98,6 +98,6 @@ MIT License
 
 ## Contact
 
-— [Email:] samirroy.8990@gmail.com
-— [Github:] https://github.com/samir-kumar-roy
+— [Email:] samirroy.8990@gmail.com <br/>
+— [Github:] https://github.com/samir-kumar-roy <br/>
 — [LinkedIn:] https://linkedin.com/in/samir-kumar-roy
