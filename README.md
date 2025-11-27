@@ -9,6 +9,7 @@ _A weather app where it suggests a set of garments one can wear in that particul
 ## 📖 Table of Contents
 
 - [About the Project](#about-the-project)
+- [Live Demo Link](#live-demo-link)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
@@ -25,6 +26,10 @@ _A weather app where it suggests a set of garments one can wear in that particul
 
 This is a weather app where I am fetching weather data from open weather map. And according to this dada condition(cold, warm or hot) it suggests me some colothes I can wear on at this particular period of the day. And based on weather it is day time or night time and weather condition (cloudy or sunny), it shows variable image on the weather card above the suggested garments.
 I can add a garment or preview it using a generic modal in this app.
+
+## Live Demo Link
+
+https://samir-kumar-roy.github.io/se_project_react/
 
 ## Tech Stack
 
@@ -98,4 +103,6 @@ MIT License
 
 ## Contact
 
-— samirroy.8990@gmail.com
+— [Email:] samirroy.8990@gmail.com
+— [Github:] https://github.com/samir-kumar-roy
+— [LinkedIn:] https://linkedin.com/in/samir-kumar-roy
