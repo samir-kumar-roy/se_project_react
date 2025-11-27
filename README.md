@@ -4,12 +4,11 @@ _A weather app where it suggests a set of garments one can wear in that particul
 
 ## 🚀 Live Demo
 
-[Link:](https://samir-kumar-roy.github.io/se_project_react/)
+[View Live Demo:](https://samir-kumar-roy.github.io/se_project_react/)
 
 ## 📖 Table of Contents
 
 - [About the Project](#about-the-project)
-- [Live Demo Link](#live-demo)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
