@@ -22,11 +22,12 @@
   object-fit: cover;
 }
 .modal__item-name {
-  margin: 20 0 12px;
-}
-.modal__weather-type {
   margin: 0;
 }
 .modal__footer {
-  padding: 0 0 32px 32px;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 }

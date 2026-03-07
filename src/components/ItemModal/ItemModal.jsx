@@ -1,6 +1,12 @@
 import close from "../../assets/close.svg";
 import "./itemModal.css";
-export default function ItemModal({ card, activeModal, closeCardModal }) {
+import DeleteButton from "../DeleteItem/DeleteButton";
+export default function ItemModal({
+  card,
+  activeModal,
+  closeCardModal,
+  deleteClickHandle,
+}) {
   return (
     <div className={`modal ${activeModal === "preview" && "modal_opened"}`}>
       <div className="modal__content modal__content-item_modal">
@@ -16,14 +22,17 @@ export default function ItemModal({ card, activeModal, closeCardModal }) {
             />
           </button>
           <img
-            src={card.link}
+            src={card.imageUrl}
             alt="Card image preview"
             className="modal__image"
           />
         </div>
         <div className="modal__footer">
-          <h2 className="modal__item-name">{card.name}</h2>
-          <p className="modal__weather-type">Weather: {card.weather}</p>
+          <div>
+            <h2 className="modal__item-name">{card.name}</h2>
+            <p className="modal__weather-type">Weather: {card.weather}</p>
+          </div>
+          <DeleteButton onDeleteClick={deleteClickHandle} />
         </div>
       </div>
     </div>

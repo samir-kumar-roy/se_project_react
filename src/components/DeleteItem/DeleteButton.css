@@ -1,0 +1,11 @@
+.modal__delete-image {
+  color: rgba(255, 77, 0, 1);
+  border: none;
+  transition: all 0.3s ease 0.1s;
+  background-color: white;
+}
+.modal__delete-image:hover {
+  color: rgb(255, 21, 0);
+  cursor: pointer;
+  border: 1px solid green;
+}

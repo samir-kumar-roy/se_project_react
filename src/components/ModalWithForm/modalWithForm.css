@@ -61,6 +61,10 @@
 }
 .modal__radio-input {
   margin-left: 0;
+  cursor: pointer;
+}
+.modal__radio-input:checked + .modal__label_text {
+  color: rgba(0, 0, 0, 0.7);
 }
 .modal__legend {
   margin-bottom: 12px;

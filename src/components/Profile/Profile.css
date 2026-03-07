@@ -1,0 +1,9 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+.sidebar__user-container {
+  width: 25%;
+}

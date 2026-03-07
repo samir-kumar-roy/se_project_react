@@ -31,6 +31,11 @@ I can add a garment or preview it using a generic modal in this app.
 **Frontend:** React, HTML, CSS, JavaScript
 **APIs:** OpenWeatherMap, etc.
 
+## Project Pitch Video
+
+Check out [this video](https://drive.google.com/file/d/15Xk6Y5wVHovf1DaBj9kf20ciU_2WOOel/view?usp=sharing), where I describe my
+project and some challenges I faced while building it.
+
 ## Installation
 
 ```bash
