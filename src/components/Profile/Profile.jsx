@@ -1,6 +1,6 @@
 import "./Profile.css";
 import Sidebar from "../Sidebar/Sidebar";
-import ClothSection from "../ClothSection/ClothSection";
+import ClothesSection from "../ClothesSection/ClothesSection";
 
 export default function Profile({
   handleCardClick,
@@ -10,7 +10,7 @@ export default function Profile({
   return (
     <section className="profile">
       <Sidebar />
-      <ClothSection
+      <ClothesSection
         handleCardClick={handleCardClick}
         clothingItems={clothingItems}
         addGarment={addGarment}

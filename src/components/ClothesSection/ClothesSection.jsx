@@ -1,4 +1,4 @@
-import "./ClothSection.css";
+import "./ClothesSection.css";
 import ItemCard from "../ItemCard/ItemCard";
 export default function ClothSection({
   handleCardClick,

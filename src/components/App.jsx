@@ -7,7 +7,7 @@ import ItemModal from "./ItemModal/ItemModal";
 import { getWeatherApi, filterWeatherData } from "../utils/getWeatherApi";
 import { coordinates, apiKey } from "../utils/constants";
 import api from "../utils/api";
-import AddItem from "./AddItem/AddItem";
+import AddItemModal from "./AddItemModal/AddItemModal";
 import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnitContext";
 import { Routes, Route } from "react-router-dom";
 import Profile from "./Profile/Profile";
@@ -123,7 +123,7 @@ function App() {
           </Routes>
           <Footer />
         </div>
-        <AddItem
+        <AddItemModal
           activeModal={activeModal}
           closeActiveModal={closeActiveModal}
           isOpened={activeModal === "add-garment"}
