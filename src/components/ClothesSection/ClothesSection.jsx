@@ -1,6 +1,6 @@
 import "./ClothesSection.css";
 import ItemCard from "../ItemCard/ItemCard";
-export default function ClothSection({
+export default function ClothesSection({
   handleCardClick,
   clothingItems,
   addGarment,
