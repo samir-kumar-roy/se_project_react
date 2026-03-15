@@ -49,28 +49,30 @@ function App() {
       .addItem(newInputData)
       .then((data) => {
         setClothingItems([data, ...clothingItems]);
+        closeActiveModal();
       })
-      .catch(console.error);
-    closeActiveModal();
+      .catch((err) => {
+        alert("Failed to add item. Please try again.");
+      });
   };
   const deleteItemHandle = (e) => {
     e.preventDefault();
     setIsDeleteConfirmOpen(true);
   };
-  const deleteImage = () => {
-    console.log("Delete confirm button clicked!");
-    console.log("deleting card ", selectedCard._id);
+  const deleteItem = () => {
     api
       .removeCard(selectedCard._id)
       .then((response) => {
-        console.log(response);
         setClothingItems((clothingItems) => {
           return clothingItems.filter((item) => item._id !== selectedCard._id);
         });
         setIsDeleteConfirmOpen(false);
         closeActiveModal();
       })
-      .catch();
+      .catch((err) => {
+        console.error(err);
+        alert("Failed to delete item.");
+      });
   };
   useEffect(() => {
     getWeatherApi(coordinates, apiKey)
@@ -140,7 +142,7 @@ function App() {
             onDeleteConfirmClose={() => {
               setIsDeleteConfirmOpen(false);
             }}
-            onDeleteConfirmClick={deleteImage}
+            onDeleteConfirmClick={deleteItem}
           />
         )}
       </div>

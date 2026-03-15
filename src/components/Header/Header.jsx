@@ -14,7 +14,7 @@ function Header({ handleClickModal, weatherData }) {
         <img src={Logo} alt="Logo" className="header__logo" />
       </Link>
       <p className="header__date-location">
-        <span className="heaer__date">{currentDate}, </span>{" "}
+        <span className="header__date">{currentDate}, </span>{" "}
         <span className="header__location">{weatherData.city}</span>
       </p>
       <ToggleSwitch />
