@@ -1,17 +1,18 @@
 const baseUrl = "http://localhost:3001";
 const handleServerResponse = (res) => {
-  return res.ok ? res.json() : Promise.reject(new Error(`Error: ${res.status}`));
+  return res.ok
+    ? res.json()
+    : Promise.reject(new Error(`Error: ${res.status}`));
 };
 const headers = { "Content-Type": "application/json" };
 const getItems = () => {
   return fetch(`${baseUrl}/items`, { headers }).then(handleServerResponse);
 };
-const addItem = ({ name, imageUrl, weather, _id }) => {
+const addItem = ({ name, imageUrl, weather }) => {
   return fetch(`${baseUrl}/items`, {
     method: "POST",
     headers,
     body: JSON.stringify({
-      //_id,
       name,
       imageUrl,
       weather,

@@ -6,7 +6,7 @@ export default function AddItemModal({
   isOpened,
   onAddItem,
 }) {
-  const { values, handleChange, setValues } = useForm({
+  const { values, handleChange } = useForm({
     name: "",
     imageUrl: "",
     weatherType: "",

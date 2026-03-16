@@ -52,6 +52,7 @@ function App() {
         closeActiveModal();
       })
       .catch((err) => {
+        console.error(err);
         alert("Failed to add item. Please try again.");
       });
   };
@@ -62,7 +63,7 @@ function App() {
   const deleteItem = () => {
     api
       .removeCard(selectedCard._id)
-      .then((response) => {
+      .then(() => {
         setClothingItems((clothingItems) => {
           return clothingItems.filter((item) => item._id !== selectedCard._id);
         });
@@ -110,8 +111,6 @@ function App() {
                 />
               }
             />
-          </Routes>
-          <Routes>
             <Route
               path="/profile"
               element={
